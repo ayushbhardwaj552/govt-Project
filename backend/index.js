@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true, limit: "4mb" })); // Add this middl
 
 // Configure CORS
 app.use(cors({
-  origin: "http://localhost:5173",   // frontend origin
+  origin: "https://govt-project-pi.vercel.app",   // frontend origin
   methods: ["GET", "POST", "PUT", "DELETE"],
   // Explicitly allow Content-Type for multipart/form-data and Authorization
   allowedHeaders: ["Content-Type", "Authorization", "Accept"],
